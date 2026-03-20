@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lift – Privacy Policy</title>
+  <style>
+    :root {
+      --accent: #5B7FFF;
+      --bg: #0A0A0F;
+      --surface: #13131A;
+      --border: #1E1E2E;
+      --text: #F0F0F5;
+      --muted: #8888A0;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 40px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(10,10,15,0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-brand .logo-mark {
+      width: 34px;
+      height: 34px;
+      background: var(--accent);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .nav-brand span {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    nav p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 72px 20px 52px;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 44px);
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 span { color: var(--accent); }
+
+    .hero p {
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    /* LAYOUT */
+    .layout {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* SIDEBAR TOC */
+    .toc {
+      position: sticky;
+      top: 80px;
+    }
+
+    .toc p {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .toc a {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 5px 0;
+      border-left: 2px solid var(--border);
+      padding-left: 12px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .toc a:hover {
+      color: var(--text);
+      border-color: var(--accent);
+    }
+
+    /* CONTENT */
+    .content section {
+      margin-bottom: 52px;
+      scroll-margin-top: 90px;
+    }
+
+    .content section h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .content section p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .content section p:last-child { margin-bottom: 0; }
+
+    .content section ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .content section ul li {
+      font-size: 14px;
+      color: var(--muted);
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .content section ul li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      margin-top: 14px;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0 !important;
+      font-size: 13px !important;
+    }
+
+    strong { color: var(--text); font-weight: 500; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 28px 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 660px) {
+      nav { padding: 14px 20px; }
+      .layout { grid-template-columns: 1fr; }
+      .toc { display: none; }
+      .hero { padding: 50px 20px 36px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="#">
+      <div class="logo-mark">L</div>
+      <span>Lift</span>
+    </a>
+    <p>Privacy Policy</p>
+  </nav>
+
+  <div class="hero">
+    <h1>Your <span>Privacy</span> Matters</h1>
+    <p>Last updated: March 20, 2026</p>
+  </div>
+
+  <div class="layout">
+
+    <!-- TOC SIDEBAR -->
+    <aside class="toc">
+      <p>On this page</p>
+      <a href="#overview">Overview</a>
+      <a href="#information-we-collect">Information We Collect</a>
+      <a href="#how-we-use">How We Use It</a>
+      <a href="#health-data">Health Data</a>
+      <a href="#sharing">Sharing</a>
+      <a href="#retention">Data Retention</a>
+      <a href="#security">Security</a>
+      <a href="#children">Children</a>
+      <a href="#your-rights">Your Rights</a>
+      <a href="#changes">Changes</a>
+      <a href="#contact">Contact</a>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>Lift ("we", "our", or "us") is a fitness and nutrition tracking app built for iOS. This Privacy Policy explains what information we collect when you use Lift, how we use it, and how we protect it.</p>
+        <p>By using Lift, you agree to the practices described in this policy. If you do not agree, please discontinue use of the app.</p>
+        <div class="highlight-box">
+          <p>We do <strong>not</strong> sell your personal data to third parties — ever.</p>
+        </div>
+      </section>
+
+      <section id="information-we-collect">
+        <h2>Information We Collect</h2>
+        <p>We collect only what is necessary to provide and improve Lift's features.</p>
+
+        <p><strong>Account Information</strong></p>
+        <ul>
+          <li>Email address and password (used for authentication)</li>
+          <li>Display name and profile photo (if you choose to add one)</li>
+          <li>Username and bio</li>
+        </ul>
+
+        <p style="margin-top:14px;"><strong>Fitness & Nutrition Data</strong></p>
+        <ul>
+          <li>Workout sessions including exercises, sets, reps, and weights</li>
+          <li>Meals and nutrition logs (calories, protein, carbs, fats)</li>
+          <li>Daily calorie and macro goals</li>
+          <li>Body measurements and health metrics you manually enter</li>
+        </ul>
+
+        <p style="margin-top:14px;"><strong>Social & Community Data</strong></p>
+        <ul>
+          <li>Profile information visible to other users</li>
+          <li>Group memberships and group activity</li>
+          <li>Live session activity and comments</li>
+          <li>Followers and following relationships</li>
+        </ul>
+
+        <p style="margin-top:14px;"><strong>Technical Data</strong></p>
+        <ul>
+          <li>Device type and iOS version (for debugging)</li>
+          <li>App crash reports and error logs</li>
+          <li>Push notification token (if notifications are enabled)</li>
+        </ul>
+      </section>
+
+      <section id="how-we-use">
+        <h2>How We Use Your Information</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+          <li>Provide core features: workout tracking, nutrition logging, progress history</li>
+          <li>Power social features: feeds, profiles, groups, and live sessions</li>
+          <li>Calculate and display your rank based on workout activity</li>
+          <li>Send push notifications (only if you opt in)</li>
+          <li>Verify and manage your Lift Pro subscription via Apple's StoreKit</li>
+          <li>Diagnose technical issues and improve app performance</li>
+          <li>Respond to support requests you send us</li>
+        </ul>
+        <p style="margin-top:14px;">We do <strong>not</strong> use your data for advertising or sell it to data brokers.</p>
+      </section>
+
+      <section id="health-data">
+        <h2>Health Data & Apple Health</h2>
+        <p>Lift can optionally read from and write to Apple Health (HealthKit) to sync workout data and health measurements. This is entirely optional and requires your explicit permission.</p>
+        <ul>
+          <li>Health data is used only to display and sync information within Lift</li>
+          <li>We do not share HealthKit data with any third party</li>
+          <li>HealthKit data is never used for advertising or sold</li>
+          <li>You can revoke HealthKit access at any time via <strong>iOS Settings → Health → Apps → Lift</strong></li>
+        </ul>
+        <div class="highlight-box">
+          <p>Lift's use of health data complies with Apple's HealthKit guidelines and is limited strictly to app functionality.</p>
+        </div>
+      </section>
+
+      <section id="sharing">
+        <h2>Sharing Your Information</h2>
+        <p>We do not sell or rent your personal information. We may share data only in these limited circumstances:</p>
+
+        <p style="margin-top:10px;"><strong>Service Providers</strong></p>
+        <p>We use Supabase for our backend database and authentication. Your data is stored securely on their infrastructure. Supabase does not use your data for any purpose other than providing services to us.</p>
+
+        <p style="margin-top:10px;"><strong>Apple (Subscription Management)</strong></p>
+        <p>If you subscribe to Lift Pro, your purchase is processed entirely by Apple. We receive only a confirmation of your subscription status — we never see your payment details.</p>
+
+        <p style="margin-top:10px;"><strong>Legal Requirements</strong></p>
+        <p>We may disclose information if required by law, court order, or to protect the safety of users or the public.</p>
+
+        <p style="margin-top:10px;"><strong>Public Profile Information</strong></p>
+        <p>Your display name, avatar, rank, and workout history (if set to public) are visible to other Lift users. You control your visibility settings from your profile.</p>
+      </section>
+
+      <section id="retention">
+        <h2>Data Retention</h2>
+        <p>We retain your data for as long as your account is active. If you request account deletion, we will permanently delete your data within <strong>30 days</strong>, except where we are required by law to retain it.</p>
+        <p>To request deletion, email us at <a href="mailto:support@liftapp.io">support@liftapp.io</a> with the subject <em>"Account Deletion Request"</em>.</p>
+      </section>
+
+      <section id="security">
+        <h2>Security</h2>
+        <p>We take security seriously. Your data is protected by:</p>
+        <ul>
+          <li>Encrypted connections (HTTPS/TLS) for all data in transit</li>
+          <li>Secure authentication managed by Supabase Auth</li>
+          <li>Passwords are never stored in plain text</li>
+          <li>Row-level security policies to ensure users can only access their own data</li>
+        </ul>
+        <p style="margin-top:14px;">No system is 100% secure. If you believe your account has been compromised, please contact us immediately at <a href="mailto:support@liftapp.io">support@liftapp.io</a>.</p>
+      </section>
+
+      <section id="children">
+        <h2>Children's Privacy</h2>
+        <p>Lift is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+      </section>
+
+      <section id="your-rights">
+        <h2>Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li><strong>Access</strong> — request a copy of the data we hold about you</li>
+          <li><strong>Correct</strong> — update inaccurate information via your Profile settings</li>
+          <li><strong>Delete</strong> — request permanent deletion of your account and data</li>
+          <li><strong>Withdraw consent</strong> — revoke Apple Health access at any time in iOS Settings</li>
+          <li><strong>Opt out of notifications</strong> — disable push notifications in iOS Settings → Notifications → Lift</li>
+        </ul>
+        <p style="margin-top:14px;">To exercise any of these rights, contact us at <a href="mailto:support@liftapp.io">support@liftapp.io</a>.</p>
+      </section>
+
+      <section id="changes">
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we do, we'll update the "Last updated" date at the top of this page. For significant changes, we'll notify you through the app or via email.</p>
+        <p>Continued use of Lift after changes are posted means you accept the updated policy.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please reach out:</p>
+        <div class="highlight-box">
+          <p>📧 <a href="mailto:support@liftapp.io">support@liftapp.io</a></p>
+        </div>
+        <p style="margin-top:14px;">We aim to respond to all privacy-related inquiries within 5 business days.</p>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <p>Lift Fitness Tracker &nbsp;·&nbsp; <a href="mailto:support@liftapp.io">support@liftapp.io</a></p>
+    <p style="margin-top:6px;">&copy; 2026 Lift. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
